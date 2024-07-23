@@ -1,0 +1,26 @@
+name: Proverka
+version: '1.0-SNAPSHOT'
+main: blood.proverka.Proverka
+api-version: '1.16'
+
+commands:
+  provermenu:
+    description: Open the checker menu
+    usage: /<command>
+  proverka:
+    description: Start a check
+    usage: /<command> <player>
+  okproverka:
+    description: Put the check on hold
+    usage: /<command>
+  ds:
+    description: Provide Discord information
+    usage: /<command> <discord>
+  proverkaaccepted:
+    description: Complete the check successfully
+    usage: /<command>
+
+permissions:
+  myplugin.command.proverka:
+    description: Allows use of the /proverka command
+    default: false
